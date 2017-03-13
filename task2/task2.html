@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="index.css">
     <title>Task1</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }  
+    </style>
 </head>
 <body>
-    <div>
-        <h1 id="top">任务一：零基础HTML编码</h1>
-        <ul>
-            <li><a href="#article1">初识HTML</a></li>
-            <li><a href="#article2">基本标签</a></li>
+    <div id="topdiv">
+         <nav class="header-logo">
+            <img src="baidu-logo.png" alt="baidu-logo" style="margin-left: 40px;
+    padding-top: 10px;">
+        </nav>
+        <ul>  
+            <li><a href="#zhuce">注册窗口</a></li>          
             <li><a href="#article3">表格</a></li>
-            <li><a href="#zhuce">注册窗口</a></li>
-        </ul>
+            <li><a href="#article2">基本标签</a></li>
+            <li><a href="#article1">初识HTML</a></li>
+         </ul>
     </div>
     <article>
         <h1 id="article1">初识HTML</h1>
@@ -70,29 +81,48 @@
         </ul>
         列表的使用：&lt;ul&gt;标签为无序列表；&lt;ol&gt;为有序列表；&lt;li&gt;标签来罗列列表项；
         下面是一个有序列表:
+        </p>
         <ol>
             <li>列表项目一</li>
             <li>列表项目二</li>
             <li>列表项目三</li>
         </ol>
-        任务需要我们又要放好多图片了：
-        <h2>图片(文章的另一个二级标题)</h2>
+    </article>
+    <article >
+        <p>任务需要我们又要放好多图片了：</p>
+        <h1>图片</h1>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        <p>好看的图片</p>
+        </div>
+        <div id="pic">
+        <label>好看的图片</label>
         <img src="touxiang.jpg">
-        </p>
+        </div>
     </article>
     <article>
         <h1 id="article3">表格</h1>
@@ -106,7 +136,7 @@
         <li>&lt;th&gt;…&lt;/th&gt;：表格的头部的一个单元格，表格表头。</li>
         <li>表格中列的个数，取决于一行中数据单元格的个数。</li>
         </ol>
-        <table>
+        <table border="1">
             <tr>
                 <th>表头</th><th>表头</th><th>表头</th>
             </tr>
@@ -130,47 +160,62 @@
                 <td>表内容单元</td>
                 <td id="4"><a href="#4">操作</a></td>
             </tr>
+            <tfoot style="background-color: #dedede">
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </tfoot>
         </table>
     </article>
-    <aside id="zhuce" title="这里以后是一个侧栏，这是侧栏的标题">
-        <h2>注册窗口</h2>
+    <aside id="zhuce">
+        <header>
+            这里以后是一个侧栏，这是侧栏的标题
+        </header>
+        <br/>
         <form method="POST">
-            <label for="email">请输入邮箱地址：</label>
+            <label class="left" for="email">请输入邮箱地址&nbsp;&nbsp;</label>
             <input type="text" name="email" value="这是一个文本输入框"/>
         </form>
-        <p>邮箱地址请按要求格式输入</p>
+        <p class="reminder">邮箱地址请按要求格式输入</p>
         <form method="POST">
-            <label for="pw">请输入密码：</label>
+            <label class="left" for="pw">请输入密码&nbsp;&nbsp;</label>
             <input type="text" name="pw" value="这是一个文本输入框"/>
-            <label for="pw2">请重复输入密码：</label>
+            <br/>
+            <label class="left" for="pw2">请重复输入密码&nbsp;&nbsp;</label>
             <input type="text" name="pw2" value="这是一个文本输入框"/>
         </form>
-        <p>密码请为6-16位英文数字</p>
+        <p class="reminder">密码请为6-16位英文数字</p>
         <form method="POST">
-            <label>性别:</label>
+            <span class="left">性别&nbsp;&nbsp;</span>
             <label >男</label>
             <input type="radio" value="1"  name="gender" selected="selected" />
-            <label>女</label>
+            <label >女</label>
             <input type="radio" value="2"  name="gender" />
-            <label>城市：</label>
+            <br />
+            <span class="left">城市&nbsp;&nbsp;</span>
             <select>
                 <option value="北京">北京</option>
                 <option value="成都">成都</option>
                 <option value="杭州">杭州</option>
                 <option value="上海">上海</option>
             </select>
-            <label>爱好：</label>
+            <br/>
+            <span class="left">爱好&nbsp;&nbsp;</span>
             <label for="sport">运动</label>
             <input type="checkbox" id="sport"  />
             <label for="art">艺术</label>
             <input type="checkbox" id="art"  />
             <label for="science">科学</label>
             <input type="checkbox" id="science" />
-            <label>个人描述：</label>
-            <textarea>这是一个多行输入框，输入您的个人描述</textarea>
-            <input type="button" value="确认提交"/>
+            <br/>
+            <span class="left" style="vertical-align: top;">个人描述&nbsp;&nbsp;</span>
+            <textarea class="info" rows="2" cols="26">这是一个多行输入框，输入您的个人描述</textarea>
+            <input class="button" type="button" value="确认提交"/>
         </form>
-        <p>版权所有@Chibaharuka</p>
     </aside>
+    <footer>
+        <p>版权所有@Chibaharuka</p>
+    </footer>
 </body>
 </html>
