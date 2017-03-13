@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task1</title>
+</head>
+<body>
+    <div>
+        <h1 id="top">任务一：零基础HTML编码</h1>
+        <ul>
+            <li><a href="#article1">初识HTML</a></li>
+            <li><a href="#article2">基本标签</a></li>
+            <li><a href="#article3">表格</a></li>
+            <li><a href="#zhuce">注册窗口</a></li>
+        </ul>
+    </div>
+    <article>
+        <h1 id="article1">初识HTML</h1>
+        <p>yaoyaoi&nbsp;2017-03-12</p>
+        <h2>基本框架</h2>
+        <xmp>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <title>Document</title>
+            </head>
+            <body>
+            </body>
+            </html>
+        </xmp>
+        <p>这是一个网站的基本架构<br />
+        大多数IDE可以都能自动生成，我使用的编辑器是vscode,只需在第一行输入"！",再按下tab健即可自动填充，如果不知道自己使用的IDE是否有这样的功能，可以<a href="http://www.baidu.com" target="_blank">百度</a>一下。
+        在这篇文章中我们将完成<strong>小薇学院的第一个任务</strong><br />
+        让我们通过一个完成这个任务，来对html标签有一个初步理解。平常大家说的上网就是浏览各种各式各样的网页，这些网页都是由html标签组成的。<br />
+        html中的标签一般都是成对出现的，分开始标签和结束标签。结束标签比开始标签多了一个/<br />
+        但是也有例外，比如：<br />
+        <img src="touxiang.jpg">
+        <p>上面是一张图片，显示图片的代码为：&lt;img src="图片名称"&gt;<br />
+        这里我们换行了，换行标签是&lt;br /&gt;，这两个标签并没有结束标签，我们管这样的标签叫做<br />
+        接下来我们进入第二篇文章具体学习一下标签
+        </p>
+    </article>
+    <article>
+        <h1 id="article2">基本标签</h1>
+        <h2>这是文章的二级标题</h2>
+        <p>yaoyaoi&nbsp;2017-03-11</p>
+        <p>首先我们来认识一下&lt;head&gt;标签，可用于&lt;head&gt;内的标签有：<br />
+        &lt;title&gt;,&lt;meta&gt;,&lt;link&gt;,&lt;style&gt;,&lt;script&gt;<br />
+        &lt;title&gt;标签：在&lt;title&gt;和&lt;title&gt;标签之间的文字内容是网页的标题信息，它会出现在浏览器的标题栏中。
+        网页的title标签用于告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出网页的主题。
+        每个网页的内容都是不同的，每个网页都应该有一个<strong>独一无二的title。</strong><br />
+        你可以发现上一行的独一无二是被加粗了，我使用了&lt;strong&gt;标签:&lt;strong&gt;独一无二&lt;/strong&gt;<br />
+        还有另一种强调，是斜体，标签为&lt;em&gt;<em>斜体</em><br />
+        我们使用&lt;hx&gt;标签来标记各级标题，&lt;h1&gt;为一级标题；&lt;h2&gt;为二级标题；&lt;h3&gt;为三级标题……<br />
+        <a href="http://www.baidu.com" target="_blank">这里有一个连接，连接到http://baidu.com</a>这是使用了&lt;a&gt;标签：
+        &lt;a href="http://www.baidu.com" target="_blank"&gta;&lt;/a&gt;当给target赋值“_blank”，网页将每次在新的窗口打开
+        (或者新的标签页，这取决于你的浏览器设置)&lt;a&gt;标签用途广泛它不仅仅可以打开一个网页，还可已制定跳转的某个位置，只要你为制定
+        的位置谈价了id属性，就可以实现该页面最上方的导航链接,这里我们添加一个回到网页头部的超链接：<a href="#top">回到网页头部</a>
+        HTML代码为：&lt;a href="#top">回到网页头部&lt;/a&gt;我们事先在网页的标题上加上了id属性：&lt;h1 id="top">任务一：零基础HTML编码&lt;/h1&gta;<br />
+        为了完成任务我们需要插入一张图片：<br />
+        <img src="touxiang.jpg">
+        然后插入一个无序列表：
+        <ul>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ul>
+        列表的使用：&lt;ul&gt;标签为无序列表；&lt;ol&gt;为有序列表；&lt;li&gt;标签来罗列列表项；
+        下面是一个有序列表:
+        <ol>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ol>
+        任务需要我们又要放好多图片了：
+        <h2>图片(文章的另一个二级标题)</h2>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        <p>好看的图片</p>
+        <img src="touxiang.jpg">
+        </p>
+    </article>
+    <article>
+        <h1 id="article3">表格</h1>
+        <p>yaoyaoi&nbsp;2017-03-11</p>
+         表格标签的说明：<br />
+        <ol>
+        <li>&lt;table&gt;…&lt;/table&gt;：整个表格以&lt;table&gt;标记开始、&lt;/table&gt;标记结束。</li>
+        <li>&lt;tbody&gt;…&lt;/tbody&gt;：当表格内容非常多时，表格会下载一点显示一点，但如果加上&lt;tbody&gt;标签后，这个表格就要等表格内容全部下载完才会显示。如右侧代码编辑器中的代码。</li>
+        <li>&lt;tr&gt;…&lt;/tr&gt;：表格的一行，所以有几对tr 表格就有几行。</li>
+        <li>&lt;td&gt;…&lt;/td&gt;：表格的一个单元格，一行中包含几对&lt;td&gt;…&lt;/td&gt;，说明一行中就有几列</li>
+        <li>&lt;th&gt;…&lt;/th&gt;：表格的头部的一个单元格，表格表头。</li>
+        <li>表格中列的个数，取决于一行中数据单元格的个数。</li>
+        </ol>
+        <table>
+            <tr>
+                <th>表头</th><th>表头</th><th>表头</th>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td id="2"><a href="#1">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td id="3"><a href="#2">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td id="4"><a href="#3">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td id="4"><a href="#4">操作</a></td>
+            </tr>
+        </table>
+    </article>
+    <aside id="zhuce" title="这里以后是一个侧栏，这是侧栏的标题">
+        <h2>注册窗口</h2>
+        <form method="POST">
+            <label for="email">请输入邮箱地址：</label>
+            <input type="text" name="email" value="这是一个文本输入框"/>
+        </form>
+        <p>邮箱地址请按要求格式输入</p>
+        <form method="POST">
+            <label for="pw">请输入密码：</label>
+            <input type="text" name="pw" value="这是一个文本输入框"/>
+            <label for="pw2">请重复输入密码：</label>
+            <input type="text" name="pw2" value="这是一个文本输入框"/>
+        </form>
+        <p>密码请为6-16位英文数字</p>
+        <form method="POST">
+            <label>性别:</label>
+            <label >男</label>
+            <input type="radio" value="1"  name="gender" selected="selected" />
+            <label>女</label>
+            <input type="radio" value="2"  name="gender" />
+            <label>城市：</label>
+            <select>
+                <option value="北京">北京</option>
+                <option value="成都">成都</option>
+                <option value="杭州">杭州</option>
+                <option value="上海">上海</option>
+            </select>
+            <label>爱好：</label>
+            <label for="sport">运动</label>
+            <input type="checkbox" id="sport"  />
+            <label for="art">艺术</label>
+            <input type="checkbox" id="art"  />
+            <label for="science">科学</label>
+            <input type="checkbox" id="science" />
+            <label>个人描述：</label>
+            <textarea>这是一个多行输入框，输入您的个人描述</textarea>
+            <input type="button" value="确认提交"/>
+        </form>
+        <p>版权所有@Chibaharuka</p>
+    </aside>
+</body>
+</html>
